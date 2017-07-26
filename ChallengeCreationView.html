@@ -44,9 +44,9 @@
 		<div id="map"></div>&nbsp; &nbsp; 
 		<script>
 		            function initMap() {
-		                var uluru = {lat: -25.363, lng: 131.044};
+		                var uluru = {lat:47.642032, long:-122.128434};
 		                var map = new google.maps.Map(document.getElementById('map'), {
-		                    zoom: 4,
+		                    zoom: 7,
 		                    center: uluru
 		                });
 		                var marker = new google.maps.Marker({
@@ -56,19 +56,22 @@
 		            }
 		        
 		</script><br>
-		<div class="row">
+		<div class="row container">
 			<p contenteditable="true">Enter location for beacon.</p>
 		</div><br>
 		<br>
-		<a class="btn btn-info" href="Index.html" onclick="return confirm('Congrats people will be able to see your challenge soon!')" role="button">Publish</a> <!-- Trigger the modal with a button -->
-		 <button class="btn btn-info btn-lg" data-target="#myModal" data-toggle="modal" type="button">Open Modal</button> <!-- Modal -->
+	 	<!-- Trigger the modal with a button -->
+		<div class="text-enter">
+			<button class="btn btn-info btn-lg text-center" data-target="#myModal" data-toggle="modal" type="button">Publish</button> <!-- Modal -->
+		</div>
+		
 		<div class="modal fade" id="myModal" role="dialog">
 			<div class="modal-dialog">
 				<!-- Modal content-->
 				<div class="modal-content">
 					<div class="modal-body">
 						<button class="close" data-dismiss="modal" type="button">&times;</button>
-						<h4 class="modal-title">Challenge Published</h4>
+						<h4 class="modal-title" style="width:auto;">Challenge Published</h4>
 					</div>
 					<div class="modal-header">
 						<p>Congrats, players will be able to see your challenge soon!</p>
