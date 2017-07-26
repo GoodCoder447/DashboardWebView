@@ -48,12 +48,13 @@
 	<section class="container">
     	<h1>Welcome to Dashboard.Earth!</h1>
 		
-		<div id="map"></div>
+		<div id="map" style="height:400px"></div>
+		
     	<script>
       		function initMap() {
-        		var uluru = {lat: -25.363, lng: 131.044};
+        		var uluru = {lat:47.632, lng:-122.134};
         		var map = new google.maps.Map(document.getElementById('map'), {
-          			zoom: 4,
+          			zoom: 13,
           			center: uluru
         		});
         		var marker = new google.maps.Marker({
@@ -65,6 +66,26 @@
 
 		<br>
 		<h2 class=heartBox>Near You</h2>
+		
+		<div class=challenge>
+			<img src="Garden.jpg" alt="bike" style="max-width:100%; border-radius:15px; max-height:100%" class="img-responsive">
+			<div style="">
+				<h2 class=challengeTitle>
+				<br>
+				Volunteer at Garden
+				<br>
+				<!-- put in a picture of a bike -->
+				
+				
+			</h2>
+			
+			</div>
+			
+			
+			<p class=challengeText>
+				Rather than drive your car to work, use a bike to save space on the road and carbon!
+			</p>
+		</div>
 		
 		<div class=challenge>
 			<img src="bike-2462339_1280.jpg" alt="bike" style="max-width:100%; border-radius:15px; max-height:100%" class="img-responsive">
@@ -85,6 +106,8 @@
 				Rather than drive your car to work, use a bike to save space on the road and carbon!
 			</p>
 		</div>
+		
+		
 		
 		
 		
