@@ -48,7 +48,7 @@ var State = {
   wobbleFadeout: 1,
   debug: true,
   growth: 0.01,
-  background: [1,1,1,1],
+  background: '#FFFFF0',
   glow: 1,
   growth: 0.05,
   solidLines: true,

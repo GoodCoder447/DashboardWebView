@@ -16,6 +16,8 @@
 
 	</style>
     <!-- Bootstrap CSS -->
+	<link rel=stylesheet type="text/css" href="Ubiquitous.css">
+	
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
@@ -46,9 +48,10 @@
 	</header>
 	
 	<section class="container">
-    	<h1>Welcome to Dashboard.Earth!</h1>
+    	<h1>Find Active Events!</h1>
 		
 		<div id="map" style="height:400px"></div>
+
     	<script>
       		function initMap() {
         		var uluru = {lat:47.632, lng:-122.134};
@@ -58,17 +61,49 @@
         		});
         		var marker = new google.maps.Marker({
          			position: uluru,
-          			map: map
+          			map: map,
+					label: {
+    					color: 'black',
+    					fontWeight: 'bold',
+   						text: 'Bike to Work',
+ 					 }
         		});
 				var newMarker = new google.maps.Marker({
          			position: {lat: 47.641750, lng: -122.129363},
-          			map: map
+          			map: map,
+					label: {
+    					color: 'black',
+    					fontWeight: 'bold',
+   						text: 'Garden Volunteer',
+ 					 }
         		});
      		}
     	</script>
 
 		<br>
 		<h2 class=heartBox>Near You</h2>
+		
+		<div class=challenge>
+			<img src="Garden.jpg" alt="bike" style="max-width:100%; border-radius:15px; max-height:100%" class="img-responsive">
+			<div style="">
+				<h2 class=challengeTitle>
+				<br>
+				Volunteer at Garden
+				<br>
+				<!-- put in a picture of a bike -->
+				
+				
+			</h2>
+			
+			</div>
+			
+			
+			<p class=challengeText>
+				Rather than drive your car to work, use a bike to save space on the road and carbon!
+			</p>
+		</div>
+		<br>
+		
 		
 		<div class=challenge>
 			<img src="bike-2462339_1280.jpg" alt="bike" style="max-width:100%; border-radius:15px; max-height:100%" class="img-responsive">
@@ -89,6 +124,12 @@
 				Rather than drive your car to work, use a bike to save space on the road and carbon!
 			</p>
 		</div>
+		
+		<br>
+		<br>
+		<br>
+		
+		
 		
 		
 		
