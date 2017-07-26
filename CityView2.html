@@ -16,6 +16,8 @@
 
 	</style>
     <!-- Bootstrap CSS -->
+	<link rel=stylesheet type="text/css" href="Ubiquitous.css">
+	
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
@@ -46,13 +48,10 @@
 	</header>
 	
 	<section class="container">
-    	<h1>Welcome to Dashboard.Earth!</h1>
+    	<h1>Find Active Events!</h1>
 		
 		<div id="map" style="height:400px"></div>
-<<<<<<< HEAD
-		
-=======
->>>>>>> c349910d2d5c2b7b38dcfd76ec0f6fe64fb10a22
+
     	<script>
       		function initMap() {
         		var uluru = {lat:47.632, lng:-122.134};
@@ -62,11 +61,21 @@
         		});
         		var marker = new google.maps.Marker({
          			position: uluru,
-          			map: map
+          			map: map,
+					label: {
+    					color: 'black',
+    					fontWeight: 'bold',
+   						text: 'Bike to Work',
+ 					 }
         		});
 				var newMarker = new google.maps.Marker({
          			position: {lat: 47.641750, lng: -122.129363},
-          			map: map
+          			map: map,
+					label: {
+    					color: 'black',
+    					fontWeight: 'bold',
+   						text: 'Garden Volunteer',
+ 					 }
         		});
      		}
     	</script>

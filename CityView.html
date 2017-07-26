@@ -7,6 +7,12 @@
 
 	<link rel=stylesheet type="text/css" href="Ubiquitous.css">
 	<link rel=stylesheet type="text/css" href="CityView.css">
+	<style>
+		#map {
+        	height: 400px;
+        	width: 100%;
+       	}
+	</style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
@@ -38,7 +44,7 @@
 	</header>
 	
 	<section class="container">
-    	<h1>Welcome to Dashboard.Earth!</h1>
+    	<h1>Find Active Events!</h1>
 		
 		<div id="map" style="height:400px"></div>
 
@@ -51,7 +57,12 @@
         		});
         		var marker = new google.maps.Marker({
          			position: uluru,
-          			map: map
+          			map: map,
+					label: {
+    					color: 'black',
+    					fontWeight: 'bold',
+   						text: 'Bike to Work',
+ 					 }
         		});
      		}
     	</script>

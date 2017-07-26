@@ -11,3 +11,11 @@
 	border: 1px solid black;
 	border-radius: 15px;
 }
+
+#score {
+	background-color:white;
+}
+
+#activeChallenges {
+	background-color:white;
+}

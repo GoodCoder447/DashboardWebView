@@ -1,8 +1,13 @@
 html {
 	height:100%;
-		background-color:#faebd7;
+
 }
 body {
-	background-color:#faebd7;
+	background-color: #FFFFF0 !important;
 	height:100%;
 }
+
+.bg-faded {
+    background-color:#FFFFF0 !important;
+}
+
