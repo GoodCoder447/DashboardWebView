@@ -7,6 +7,12 @@
 
 
 	<link rel=stylesheet type="text/css" href="CityView.css">
+	<style>
+		#map {
+        	height: 400px;
+        	width: 100%;
+       	}
+	</style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
@@ -40,22 +46,21 @@
 	<section class="container">
     	<h1>Welcome to Dashboard.Earth!</h1>
 		
-		<div id="map" style="height:400px"></div>
+		        <div id="map" style="height:400px"></div>
+
     	<script>
       		function initMap() {
-        		var uluru = {lat: -25.363, lng: 131.044};
+        		var uluru = {lat:47.632, lng:-122.134};
         		var map = new google.maps.Map(document.getElementById('map'), {
-          			zoom: 4,
+          			zoom: 13,
           			center: uluru
         		});
         		var marker = new google.maps.Marker({
          			position: uluru,
           			map: map
         		});
-				
-		}
+     		}
     	</script>
-
 
 		<br>
 		<h2 class=heartBox>Near You</h2>
