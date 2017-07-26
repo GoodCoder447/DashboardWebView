@@ -48,16 +48,20 @@
 	<section class="container">
     	<h1>Welcome to Dashboard.Earth!</h1>
 		
-		<div id="map"></div>
+		<div id="map" style="height:400px"></div>
     	<script>
       		function initMap() {
-        		var uluru = {lat: -25.363, lng: 131.044};
+        		var uluru = {lat:47.632, lng:-122.134};
         		var map = new google.maps.Map(document.getElementById('map'), {
-          			zoom: 4,
+          			zoom: 13,
           			center: uluru
         		});
         		var marker = new google.maps.Marker({
          			position: uluru,
+          			map: map
+        		});
+				var newMarker = new google.maps.Marker({
+         			position: {lat: 47.641750, lng: -122.129363},
           			map: map
         		});
      		}
