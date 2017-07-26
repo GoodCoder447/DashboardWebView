@@ -1,0 +1,13 @@
+#belowHalo {
+	margin-top: 1em;
+}
+
+#score {
+	border: 1px solid black;
+	border-radius: 15px;
+}
+
+#activeChallenges {
+	border: 1px solid black;
+	border-radius: 15px;
+}
