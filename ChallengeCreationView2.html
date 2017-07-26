@@ -5,10 +5,10 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 	<style>
-	       #map {
-	            height: 400px;
-	            width: 100%;
-	        }
+	       [contenteditable=true]:empty:before{
+  				content: attr(placeholder);
+  				display: block; /* For Firefox */
+			}
 	</style>
 	<link href="PersonalViewAdmin.css" rel="stylesheet" type="text/css"><!-- Bootstrap CSS -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
@@ -47,9 +47,9 @@
 		
 		
 		
-		<h4 contenteditable="true">Insert a title</h4>
+		<h4 contenteditable="true" placeholder="Insert a title"></h4>
 		
-		<p contenteditable="true">Enter a description.</p>
+		<p contenteditable="true" placeholder="Enter a description."></p>
 		<div id="map"></div>&nbsp; &nbsp; 
 		<script>
 		            function initMap() {
@@ -66,7 +66,7 @@
 		        
 		</script><br>
 		<div class="row container">
-			<p contenteditable="true">Enter location for beacon.</p>
+			<p contenteditable="true" placeholder="Enter location for beacon.></p>
 		</div><br>
 		<br>
 	 	<!-- Trigger the modal with a button -->
